@@ -1,4 +1,4 @@
-// IIFE's needed so that variables are declared for use in non-IFFE functions below.
+// IIFE's needed so that variables are declared for use in non-IFFE functions below. Also wrap in an IIFE since we only need one to prevent new instances being made.
 const gameBoard = (() => {
   const cells = document.querySelectorAll(".cell");
   const _winConditions = [
