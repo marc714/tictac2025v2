@@ -121,7 +121,11 @@ function restartGame() {
   gameStatus.running = true;
   gameStatus.currentPlayer = "X";
   gameBoard.options = ["", "", "", "", "", "", "", "", ""];
-  gameBoard.cells.forEach((cell) => (cell.textContent = ""));
+  // gameBoard.cells.forEach((cell) => (cell.textContent = ""));
+  gameBoard.cells.forEach((cell) => {
+    cell.textContent = "";
+    cell.style.backgroundColor = "white";
+  });
 }
 
 // function constructor
